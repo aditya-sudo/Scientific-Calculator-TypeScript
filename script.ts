@@ -1,4 +1,4 @@
-var memoryRegister = [];
+var memoryRegister: number[] = [];
 const display = document.getElementById("display");
 function show(x: string): void {
   let y: string = document.getElementById(x).innerText;
@@ -89,7 +89,6 @@ function round(): void {
 function exp(): void {
   display.innerText = String(parseFloat(display.innerText).toExponential(3));
 }
-
 function memorysave(): void {
   let num: number = Number(display.innerText);
   if (Number(isNaN(num))) return;
